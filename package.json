@@ -1,0 +1,37 @@
+{
+  "name": "cpm",
+  "version": "1.0.0",
+  "description": "show particulate matter grade by who standard",
+  "scripts": {
+    "test:server": "mocha server/spec/** --recursive --compilers js:babel-core/register",
+    "build:server": "webpack --config webpack.server.config.js",
+    "start:server": "node ./dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "morgan": "^1.8.2",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "^2.4.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "css-loader": "^0.28.4",
+    "html-webpack-plugin": "^2.29.0",
+    "mocha": "^3.4.2",
+    "proxyquire": "^1.8.0",
+    "pug-loader": "^2.3.0",
+    "sinon": "^2.3.6",
+    "style-loader": "^0.18.2",
+    "supertest": "^3.0.0",
+    "webpack": "^3.0.0"
+  }
+}
